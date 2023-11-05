@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:background="@color/primary"
+        android:layout_height="60dp"
+        android:visibility="visible">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:orientation="horizontal"
+               android:padding="10dp">
+
+
+               <LinearLayout
+                   android:layout_width="300dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:background="@drawable/search_bar_background"
+                   android:gravity="center_vertical"
+                   android:orientation="horizontal"
+                   android:paddingHorizontal="15dp"
+                   android:paddingVertical="10dp">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginRight="10dp"
+                       android:layout_weight="1"
+                       android:src="@drawable/baseline_search_60" />
+
+                   <TextView
+                       android:id="@+id/textView"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="left"
+                       android:text="Search Apps"
+                       android:textColor="@color/black"
+                       android:textSize="15dp"
+                       tools:ignore="TextSizeCheck" />
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:src="@drawable/baseline_mic_none_60" />
+
+               </LinearLayout>
+
+
+               <ImageView
+                   android:layout_width="37dp"
+                   android:layout_height="27dp"
+                   android:minWidth="60dp"
+                   android:src="@drawable/baseline_notifications_none_60" />
+
+
+               <ImageView
+                   android:layout_width="80dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:src="@drawable/avata" />
+
+           </LinearLayout>
+       </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/app_rv"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

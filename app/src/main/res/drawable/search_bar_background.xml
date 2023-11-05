@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/searchbar" /> <!-- Màu nền đen -->
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+    <item android:right="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" /> <!-- Màu nền trong suốt -->
+            <corners android:radius="20dp" />
+            <stroke android:width="1dp" android:color="@color/searchbar" /> <!-- Đường viền -->
+        </shape>
+    </item>
+</layer-list>
